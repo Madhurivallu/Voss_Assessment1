@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+   <test thread-count="1" name="SSL Test01">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      
+      <class name="SSL_Certificate.Handle_SSL_certify"/>
+      
+    </classes>
+  </test> <!-- Test01 -->
+  <test thread-count="1" name="SSL Test02">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      
+      <class name="SSL_Certificate.Handle_SSL_certify"/>
+    </classes>
+  </test> <!-- Test02 --> 
+</suite> <!-- Suite -->
+
