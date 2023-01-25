@@ -1,0 +1,14 @@
+ 5. Describe how you might build in exception and error handling to your application.
+
+1. Identify potential exceptions and errors: Identify potential points of failure in the application and the types of exceptions and errors that may occur.
+2. Use try-catch blocks: Use try-catch blocks to enclose the code that may throw an exception. Inside the catch block, handle the exception by logging the error and providing a
+   meaningful message to the user.
+Use logging: Use a logging framework such as log4j or java.util.logging to log exceptions and errors. This allows you to keep track of when and where an exception occurred.
+An example of using try-catch blocks in Java is:
+
+Copy code
+try {
+   int result = 1 / 0;
+} catch (ArithmeticException e) {
+   System.out.println("Error: Cannot divide by zero");
+}
